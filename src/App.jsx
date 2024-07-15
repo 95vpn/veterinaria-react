@@ -1,10 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 import './App.css'
+import useCrud from './hooks/useCrud'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const url = 'https://veterinaria-data.onrender.com/api/v1';
+
+  const [pets, getPets, createPets, deletePets, updatePets] = useCrud(url);
+
+  useEffect(() => {
+    getPets('/pets/');
+  }, [])
+  
+  console.log(pets)
 
   return (
     <div>

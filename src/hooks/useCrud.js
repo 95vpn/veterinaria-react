@@ -10,7 +10,7 @@ const useCrud = (urlBase) => {
     const getApi = (path) => {
         axios.get(`${urlBase}${path}/`)
         .then(res => setapiData(res.data))
-        .catch(err = console.log(err))
+        .catch(err => console.log(err))
     }
 
     //create
@@ -29,7 +29,7 @@ const useCrud = (urlBase) => {
                 setapiData(apiData.filter(element => element.id !== id))
                 console.log('borrado con exito')
             })
-            .catch()
+            .catch(err => console.log(err))
     }
 
     //update

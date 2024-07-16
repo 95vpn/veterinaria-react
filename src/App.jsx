@@ -1,6 +1,7 @@
-import { useEffect } from 'react'
-import './App.css'
-import useCrud from './hooks/useCrud'
+import { useEffect } from 'react';
+import './App.css';
+import useCrud from './hooks/useCrud';
+import FormUser from './components/FormUser';
 
 function App() {
   
@@ -9,7 +10,7 @@ function App() {
   const [pets, getPets, createPets, deletePets, updatePets] = useCrud(url);
 
   useEffect(() => {
-    getPets('/pets/');
+    getPets('/pets');
   }, [])
   
   console.log(pets)
@@ -17,8 +18,9 @@ function App() {
   return (
     <div>
       <h1>formulkario veterinaria</h1>
+      <FormUser/>
     </div>
   )
 }
 
-export default App
+export default App;

@@ -18,7 +18,9 @@ function App() {
   return (
     <div>
       <h1>formulkario veterinaria</h1>
-      <FormUser/>
+      <FormUser
+        createPets={createPets}
+      />
     </div>
   )
 }

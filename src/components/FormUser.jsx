@@ -8,7 +8,7 @@ const FormUser = ({ createPets }) => {
     const { handleSubmit, register, reset } = useForm();
 
     const submit = (data) => {
-        createPets('pets', data)
+        createPets('/pets', data)
         reset({
             owner_name:'',
             owner_lastName:'',
@@ -75,8 +75,7 @@ const FormUser = ({ createPets }) => {
                 </div>
                 <div>
                     <label htmlFor="vaccinated">vaccinated</label>
-                    <input {...register('vaccinated')} id='vaccinated' type="radio" value="yes" /> Yes
-                    <input {...register('vaccinated')} id='vaccinated' type="radio" value="no" />No
+                    <input  {...register('vaccinated')} id='vaccinated' type="text" />
                 </div>
                 <div>
                     <label htmlFor="anamnesicos">anamnesicos</label>

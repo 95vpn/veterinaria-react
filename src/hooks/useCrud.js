@@ -15,7 +15,7 @@ const useCrud = (urlBase) => {
 
     //create
     const postApi = (path, data) => {
-        axios.post(`${urlBase}${path}/`, data)
+        axios.post(`${urlBase}${path}`, data)
             .then(res => {
                 setapiData([...apiData, res.data]);
                 console.log(res.data);

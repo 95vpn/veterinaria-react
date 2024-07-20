@@ -1,9 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import useCrud from './hooks/useCrud';
 import FormUser from './components/FormUser';
+import CardPet from './components/CardPet';
 
 function App() {
+
+  const [editUser, setEditUser] = useState();
+  const [isOpen, setIsOpen] = useState(false);
   
   const url = 'https://data-base-veterinaria.onrender.com/api/v1';
 
@@ -12,15 +16,35 @@ function App() {
   useEffect(() => {
     getPets('/pets');
   }, [])
-  
-  console.log(pets)
 
+  const handleOpen = () => {
+    setIsOpen(true)
+  }
+  
   return (
     <div>
-      <h1>formulkario veterinaria</h1>
+      <h1>Formulario Veterinaria</h1>
+      <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
       <FormUser
         createPets={createPets}
+        editUser={editUser}
+        updatePets={updatePets}
+        setEditUser={setEditUser}
+        setIsOpen={setIsOpen}
+        isOpen={isOpen}
       />
+      <div>
+        {
+          pets?.map(pet => (
+            <CardPet
+            key={pet.id}
+              pet={pet}
+              deletePets={deletePets}
+              setEditUser={setEditUser}
+            />
+          ))
+        }
+      </div>
     </div>
   )
 }

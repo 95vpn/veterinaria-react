@@ -3,12 +3,13 @@ import './App.css';
 import useCrud from './hooks/useCrud';
 import FormUser from './components/FormUser';
 import CardPet from './components/CardPet';
+import PetPDF from './components/PetPDF';
 
 function App() {
 
   const [editUser, setEditUser] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const url = 'https://data-base-veterinaria.onrender.com/api/v1';
 
   const [pets, getPets, createPets, deletePets, updatePets] = useCrud(url);
@@ -20,9 +21,9 @@ function App() {
   const handleOpen = () => {
     setIsOpen(true)
   }
-  
+
   return (
-    <div>
+    <div className='container__total'>
       <h1>Formulario Veterinaria</h1>
       <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
       <FormUser
@@ -33,11 +34,11 @@ function App() {
         setIsOpen={setIsOpen}
         isOpen={isOpen}
       />
-      <div>
+      <div className='container__card'>
         {
           pets?.map(pet => (
             <CardPet
-            key={pet.id}
+              key={pet.id}
               pet={pet}
               deletePets={deletePets}
               setEditUser={setEditUser}

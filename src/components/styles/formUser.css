@@ -25,8 +25,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
     gap: 10px;
     position: relative;
+    width: 80%;
+    
 }
 
 .form__close{
@@ -42,6 +46,33 @@
 }
 
 .form__title{
-    text-align: center;
-    
+    text-align: center; 
+}
+
+.form__item__owner{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 60%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__item input{
+    padding: 10px;
+}
+
+.form__item__pet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form__btn{
+    padding: 10px 15px;
 }

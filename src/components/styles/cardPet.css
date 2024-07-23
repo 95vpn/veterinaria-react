@@ -1,10 +1,12 @@
 .container__card__info{
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 5px 8px;
 }
 
 .container__card div{
@@ -15,17 +17,25 @@
 
 }
 
+.container__card__owner li span:first-child {
+    font-weight: bold;
+}
+
 .container__card__pet{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+.container__card__pet li span:first-child{
+    font-weight: bold;
+}
+
 .container__card__info__btn{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     gap: 10px;
-    
 }
 
 .container__card__info__btn button{

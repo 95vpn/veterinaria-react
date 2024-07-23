@@ -8,9 +8,8 @@ const styles = StyleSheet.create({
       padding: 30,
     },
     section: {
-      margin: 10,
-      padding: 10,
-      flexGrow: 1,
+      
+      
     },
     title: {
       fontSize: 24,
@@ -31,11 +30,11 @@ const PetPDF = ({ pet }) => {
         <Page size="A4" style={styles.page}>
           <View style={styles.section}>
             <Text style={styles.title}>Owner Information</Text>
-            <Text style={styles.text}><Text style={styles.bold} >Owner Name:</Text>Owner Name: {pet.owner_name} {pet.owner_lastName}</Text>
+            <Text style={styles.text}><Text style={styles.bold} >Owner Name: </Text> {pet.owner_name} {pet.owner_lastName}</Text>
             <Text style={styles.text}><Text style={styles.bold} >Address: </Text>{pet.address}</Text>
-            <Text style={styles.text}><Text style={styles.bold} >Phone:</Text>{pet.phone}</Text>
-            <Text style={styles.text}><Text style={styles.bold} >Email:</Text>{pet.email}</Text>
-            <Text style={styles.text}><Text style={styles.bold} >Date:</Text>{pet.release_data}</Text>
+            <Text style={styles.text}><Text style={styles.bold} >Phone: </Text>{pet.phone}</Text>
+            <Text style={styles.text}><Text style={styles.bold} >Email: </Text>{pet.email}</Text>
+            <Text style={styles.text}><Text style={styles.bold} >Date: </Text>{pet.release_data}</Text>
           </View>
           <View style={styles.section}>
             <Text style={styles.title}>Pet Information</Text>
@@ -46,6 +45,7 @@ const PetPDF = ({ pet }) => {
             <Text style={styles.text}><Text style={styles.bold} >Weight:</Text>{pet.weigth}</Text>
             <Text style={styles.text}><Text style={styles.bold} >Vaccinated: </Text>{pet.vaccinated}</Text>
             <Text style={styles.text}><Text style={styles.bold} >Anamnesicos:</Text>{pet.anamnesicos}</Text>
+            <Text style={styles.bold} >Anamnesicos:</Text>
           </View>
         </Page>
       </Document>

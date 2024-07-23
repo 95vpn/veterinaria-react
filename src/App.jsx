@@ -26,14 +26,17 @@ function App() {
     <div className='container__total'>
       <h1>Formulario Veterinaria</h1>
       <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
-      <FormUser
-        createPets={createPets}
-        editUser={editUser}
-        updatePets={updatePets}
-        setEditUser={setEditUser}
-        setIsOpen={setIsOpen}
-        isOpen={isOpen}
-      />
+      <div className='container__form_user'>
+        <FormUser
+          createPets={createPets}
+          editUser={editUser}
+          updatePets={updatePets}
+          setEditUser={setEditUser}
+          setIsOpen={setIsOpen}
+          isOpen={isOpen}
+        />
+
+      </div>
       <div className='container__card'>
         {
           pets?.map(pet => (
@@ -42,6 +45,7 @@ function App() {
               pet={pet}
               deletePets={deletePets}
               setEditUser={setEditUser}
+              setIsOpen={setIsOpen}
             />
           ))
         }

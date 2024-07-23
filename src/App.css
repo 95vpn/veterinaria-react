@@ -23,15 +23,35 @@ img {
 }
 
 body {
-  
+  background-color: rgb(78, 61, 35);
+  color: burlywood;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
 }
 
 .container__total {
- 
+  
+ padding: 20px;
 }
+.container__form_user{
+  display: flex;
+  justify-content: center;
+}
+
+.container__total h1{
+  padding: 20px;
+ }
+
+ .container__total button{
+  padding: 5px;
+  margin-bottom: 15px;
+ }
 
 .container__card {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+  
 }

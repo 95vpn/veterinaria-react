@@ -7,7 +7,7 @@ import './styles/formUser.css'
 const FormUser = ({ createPets, editUser, updatePets, setEditUser, isOpen, setIsOpen }) => {
 
 
-
+    console.log(editUser)
     const { handleSubmit, register, reset } = useForm();
 
     useEffect(() => {

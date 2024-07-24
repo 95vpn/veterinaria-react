@@ -31,7 +31,7 @@ const CardPet = ({ pet, deletePets, setEditUser, setIsOpen }) => {
                 <ul className='container__card__pet'>
                     <h4>Pet Information</h4>
                     <li><span>Name:  </span><span>{pet.name}</span></li>
-                    <li><span>Species:  </span><span>{pet.species}</span></li>
+                    <li><span>Specie:  </span><span>{pet.species}</span></li>
                     <li><span>Breed:  </span><span>{pet.breed}</span></li>
                     <li><span>Age:  </span><span>{pet.age}</span></li>
                     <li><span>Weight:  </span><span>{pet.weigth}</span></li>

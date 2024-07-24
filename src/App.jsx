@@ -23,32 +23,52 @@ function App() {
   }
 
   return (
-    <div className='container__total'>
-      <h1>Formulario Veterinaria</h1>
-      <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
-      <div className='container__form_user'>
-        <FormUser
-          createPets={createPets}
-          editUser={editUser}
-          updatePets={updatePets}
-          setEditUser={setEditUser}
-          setIsOpen={setIsOpen}
-          isOpen={isOpen}
-        />
-
+    <div>
+      <div className='envoltura'>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <div className='container__card'>
-        {
-          pets?.map(pet => (
-            <CardPet
-              key={pet.id}
-              pet={pet}
-              deletePets={deletePets}
-              setEditUser={setEditUser}
-              setIsOpen={setIsOpen}
-            />
-          ))
-        }
+      <div className='container__total'>
+        <div className='container__total__header'>
+          <h1>Formulario Veterinaria</h1>
+          <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
+
+        </div>
+        <div className='container__form_user'>
+          <FormUser
+            createPets={createPets}
+            editUser={editUser}
+            updatePets={updatePets}
+            setEditUser={setEditUser}
+            setIsOpen={setIsOpen}
+            isOpen={isOpen}
+          />
+
+        </div>
+        <div className='container__card'>
+          {
+            pets?.map(pet => (
+              <CardPet
+                key={pet.id}
+                pet={pet}
+                deletePets={deletePets}
+                setEditUser={setEditUser}
+                setIsOpen={setIsOpen}
+              />
+            ))
+          }
+        </div>
       </div>
     </div>
   )

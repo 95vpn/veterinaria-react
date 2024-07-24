@@ -1,4 +1,6 @@
-.container__card__info{
+.container__card__info {
+    position: relative;
+    z-index: 2;
     width: 350px;
     height: 600px;
     display: flex;
@@ -9,44 +11,40 @@
     box-shadow: 0 5px 8px;
 }
 
-.container__card__info__list{
+.container__card__info__list {
     height: 500px;
 }
 
-.container__card__info__list h4{
+.container__card__info__list h4 {
     padding: 8px;
 }
 
-.container__card div{
-   
-}
+.container__card div {}
 
-.container__card__owner{
-
-}
+.container__card__owner {}
 
 .container__card__owner li span:first-child {
     font-weight: bold;
 }
 
-.container__card__pet{
+.container__card__pet {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.container__card__pet li span:first-child{
+.container__card__pet li span:first-child {
     font-weight: bold;
 }
 
-.container__card__info__btn{
+.container__card__info__btn {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     gap: 10px;
 }
 
-.container__card__info__btn button{
+.container__card__info__btn button {
     width: 60px;
     padding: 5px 15px;
 }

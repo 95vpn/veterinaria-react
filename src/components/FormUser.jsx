@@ -83,7 +83,7 @@ const FormUser = ({ createPets, editUser, updatePets, setEditUser, isOpen, setIs
                         <input {...register('name')} id='name' type="text" />
                     </div>
                     <div className='form__item'>
-                        <label htmlFor="species">species</label>
+                        <label htmlFor="species">specie</label>
                         <input {...register('species')} id='species' type="text" />
                     </div>
                     <div className='form__item'>

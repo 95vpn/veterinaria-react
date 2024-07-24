@@ -9,6 +9,14 @@
     box-shadow: 0 5px 8px;
 }
 
+.container__card__info__list{
+    height: 500px;
+}
+
+.container__card__info__list h4{
+    padding: 8px;
+}
+
 .container__card div{
    
 }

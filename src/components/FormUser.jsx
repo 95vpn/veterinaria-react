@@ -18,7 +18,7 @@ const FormUser = ({ createPets, editUser, updatePets, setEditUser, isOpen, setIs
     const submit = (data) => {
         if (editUser) {
             updatePets('/pets', editUser.id, data);
-            setEditUser();
+            setEditUser(null);
         } else {
             createPets('/pets', data);
         }
@@ -43,12 +43,14 @@ const FormUser = ({ createPets, editUser, updatePets, setEditUser, isOpen, setIs
 
     const handleClose = () => {
         setIsOpen(false);
+        reset();
+        
     }
 
     return (
         <div className={`form__background ${isOpen && 'able'}`}>
             <form className='form__container' onSubmit={handleSubmit(submit)}>
-                <h2 className='form__title'>Nuevo Cliente</h2>
+                <h2 className='form__title'>New Client</h2>
                 <div className='form__close' onClick={handleClose}><ion-icon name="close-circle-outline"></ion-icon></div>
                 <div className='form__item__owner'>
                     <div className='form__item'>
@@ -104,10 +106,11 @@ const FormUser = ({ createPets, editUser, updatePets, setEditUser, isOpen, setIs
                     </div>
                     <div className='form__item'>
                         <label htmlFor="anamnesicos">anamnesicos</label>
-                        <textarea {...register('anamnesicos')} name="anamnesicos" id="anamnesicos"></textarea>
+                        <textarea {...register('anamnesicos')} name="anamnesicos" id="anamnesicos" style={{ width: '500px', height: '150px' }}></textarea>
                     </div>
                 </div>
-                <button className='form__btn'>Submit</button>
+                <button type="button" className='form__btn' onClick={handleClose}>Cancel</button>
+                <button type='submit' className='form__btn'>Submit</button>
             </form>
         </div>
     )

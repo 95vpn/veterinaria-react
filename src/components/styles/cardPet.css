@@ -1,6 +1,5 @@
 .container__card__info {
-    position: relative;
-    z-index: 2;
+    
     width: 350px;
     height: 600px;
     display: flex;
@@ -47,4 +46,5 @@
 .container__card__info__btn button {
     width: 60px;
     padding: 5px 15px;
+    font-size: 18px;
 }

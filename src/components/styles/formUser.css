@@ -11,6 +11,7 @@
     backdrop-filter: blur(2px);
     transform: scale(0);
     transition: transform .25s;
+    
 }
 
 .form__background.able{
@@ -32,7 +33,8 @@
     gap: 10px;
     position: relative;
     width: 80%;
-    
+    position: relative;
+    z-index: 3;
 }
 
 .form__close{
@@ -68,6 +70,11 @@
 
 .form__item input{
     padding: 10px;
+    font-size: 18px;
+}
+
+.form__item textarea{
+    font-size: 18px;
 }
 
 .form__item__pet{
@@ -79,4 +86,5 @@
 
 .form__btn{
     padding: 10px 15px;
+    font-size: 18px;
 }

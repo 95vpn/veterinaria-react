@@ -17,6 +17,10 @@ ol {
   list-style: none;
 }
 
+button{
+  font-size: 18px;
+}
+
 button:hover{
   cursor: pointer;
   background-color: antiquewhite;
@@ -48,13 +52,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .container__total__header{
   position: relative;
   z-index: 2;
+}
+
+.envoltura__fixed{
+  position: fixed;
+  width: 100%;
 }
 
 .envoltura{
@@ -88,12 +97,13 @@ body {
   left: 35%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
-  transition: 3000ms ease-in-out;
+  transform: rotateY(360deg);
+  transition: 4000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-delay: 3s;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
 }
@@ -104,7 +114,7 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: -35%;
+  left: 15%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
   transform: rotateX(360deg);
@@ -115,6 +125,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 6s;
 }
 .envoltura div:nth-child(3){
   /* background-color: #fdb44e; */
@@ -125,7 +136,7 @@ body {
   left: 25%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateZ(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -133,6 +144,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 9s;
 }
 
 .envoltura div:nth-child(4){
@@ -141,10 +153,10 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: -25%;
+  left: 25%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateY(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -152,6 +164,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 12s;
 }
 
 .envoltura div:nth-child(5){
@@ -171,6 +184,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 15s;
 }
 
 .envoltura div:nth-child(6){
@@ -179,10 +193,10 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: -50%;
+  left: -10%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateZ(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -190,6 +204,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 18s;
 }
 
 .envoltura div:nth-child(7){
@@ -201,7 +216,7 @@ body {
   left: 50%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateY(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -209,6 +224,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 21s;
 }
 .envoltura div:nth-child(8){
   /* background-color: #fdb44e; */
@@ -227,6 +243,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 24s;
 }
 
 .envoltura div:nth-child(9){
@@ -235,10 +252,10 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: 135%;
+  left: 90%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateZ(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -246,6 +263,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 28s;
 }
 
 .envoltura div:nth-child(10){
@@ -254,10 +272,10 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: 120%;
+  left: 70%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
-  transform: rotateX(360deg);
+  transform: rotateY(360deg);
   transition: 3000ms ease-in-out;
   animation-name: mover;
   animation-duration: 15s;
@@ -265,6 +283,7 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 34s;
 }
 
 .envoltura div:nth-child(11){
@@ -273,7 +292,7 @@ body {
   width: 120px;
   position: absolute;
   top: 40%;
-  left: 110%;
+  left: 80%;
   border-radius: 0 120px 0 120px;
   transform-style: preserve-3d;
   transform: rotateX(360deg);
@@ -284,29 +303,31 @@ body {
   animation-iteration-count: infinite;
   box-shadow: 0 10px 15px burlywood;
   border-radius: 0 120px 0 120px;
+  animation-delay: 38s;
 }
 
 
 
 @keyframes mover {
   0%{
-    top: -500px;
+    top: -100px;
     background-color: #fdb44e;
+    transform: scale(.7) rotateY(130deg);
   }
   50%{
     top: 300px;
-    
+    transform:  rotateX(0deg);
   }
   100%{
     top: 700px;
-    transform: scale(.1) rotateX(360deg);
+    transform: scale(.1) rotateX(180deg);
   }
   
 }
 
 .container__form_user{
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
 }
@@ -325,6 +346,7 @@ body {
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   
 }

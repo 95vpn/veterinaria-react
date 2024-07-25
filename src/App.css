@@ -310,7 +310,7 @@ body {
 
 @keyframes mover {
   0%{
-    top: -100px;
+    top: -200px;
     background-color: #fdb44e;
     transform: scale(.7) rotateY(130deg);
   }

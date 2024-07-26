@@ -11,7 +11,6 @@
     backdrop-filter: blur(2px);
     transform: scale(0);
     transition: transform .25s;
-    
 }
 
 .form__background.able{
@@ -20,7 +19,7 @@
 }
 
 .form__container{
-    background-color: burlywood;
+    background-color: #927d62;
     color: black;
     
     padding: 25px;
@@ -35,6 +34,7 @@
     width: 80%;
     position: relative;
     z-index: 3;
+
 }
 
 .form__close{
@@ -51,6 +51,7 @@
 
 .form__title{
     text-align: center; 
+    color: aliceblue;
 }
 
 .form__item__owner{
@@ -66,6 +67,10 @@
 .form__item{
     display: flex;
     flex-direction: column;
+}
+
+.form__item label{
+    color: aliceblue;
 }
 
 .form__item input{

@@ -45,7 +45,7 @@ function App() {
       <div className='container__total'>
         <div className='container__total__header'>
           <h1>Formulario Veterinaria</h1>
-          <button onClick={handleOpen}>+ Crear Nuevo Usuario</button>
+          <button className='container__create--user' onClick={handleOpen}>+ Crear Nuevo Usuario</button>
 
         </div>
         <div className='container__form_user'>

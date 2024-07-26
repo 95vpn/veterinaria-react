@@ -1,6 +1,6 @@
 import React from 'react';
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-import CardPet from './CardPet';
+import CardPet from'./CardPet';
 // import logo from "../../public/logo-pet.PNG";
 
 const styles = StyleSheet.create({
